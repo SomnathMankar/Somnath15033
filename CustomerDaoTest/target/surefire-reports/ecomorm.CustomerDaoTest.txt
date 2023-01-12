@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: ecomorm.CustomerDaoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.59 s <<< FAILURE! - in ecomorm.CustomerDaoTest
+testFindOneAndUpdate  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalArgumentException: org.hibernate.QueryException: could not resolve property: CustName of: com.training.ecom.model.Customer [Update com.training.ecom.model.Customer c set c.CustName=:custName where custId=:custId]
+	at ecomorm.CustomerDaoTest.testFindOneAndUpdate(CustomerDaoTest.java:51)
+Caused by: org.hibernate.QueryException: could not resolve property: CustName of: com.training.ecom.model.Customer [Update com.training.ecom.model.Customer c set c.CustName=:custName where custId=:custId]
+	at ecomorm.CustomerDaoTest.testFindOneAndUpdate(CustomerDaoTest.java:51)
+Caused by: org.hibernate.QueryException: could not resolve property: CustName of: com.training.ecom.model.Customer
+	at ecomorm.CustomerDaoTest.testFindOneAndUpdate(CustomerDaoTest.java:51)
+
